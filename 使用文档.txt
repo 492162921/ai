@@ -1,0 +1,31 @@
+下载helm
+Linux：sudo snap install helm --classic
+macOS：brew install kubernetes-helm
+Windows：choco install kubernetes-helm、scoop install helm
+
+创建chart
+helm create chart-name
+
+规定依赖关系
+编写requirements.yaml
+
+添加repo到本地
+helm repo add
+
+下载依赖chart
+helm dependency update
+
+启动helm仓库
+helm serve --repo-path ./charts --address 192.168.131.240:xxxx
+
+rancher添加自定义helm仓库
+http://192.168.131.240:xxxx
+
+打包chart，仓库只识别打包后的chart
+helm package chart-name/
+
+新加入chart时需要更新index.yaml
+helm repo index . --url http://192.168.131.240:xxxx
+
+（可选）使用chartmusemu搭建helm仓库
+docker run --rm -it   -p 8080:8080 -v $(pwd)/charts:/charts -e DEBUG=true -e STORAGE=local -e STORAGE_LOCAL_ROOTDIR=/charts chartmuseum/chartmuseum --chart-url=http://192.168.131.240:xxxx

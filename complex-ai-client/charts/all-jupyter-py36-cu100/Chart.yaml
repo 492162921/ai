@@ -1,0 +1,5 @@
+apiVersion: v1
+appVersion: "1.0"
+description: 该镜像整合了Theano、TensorFlow、Sonnet、PyTorch、Caffe2、Keras、Lasagne、MXNet、CNTK、Chainer、Torch、Darknet，开箱即用。
+name: all-jupyter-py36-cu100
+version: 0.3.2

@@ -1,0 +1,23 @@
+apiVersion: v1
+entries:
+  all-jupyter-py36-cu100:
+  - apiVersion: v1
+    appVersion: "1.0"
+    created: "2019-09-05T17:40:00.218875604+08:00"
+    description: 该镜像整合了Theano、TensorFlow、Sonnet、PyTorch、Caffe2、Keras、Lasagne、MXNet、CNTK、Chainer、Torch、Darknet，开箱即用。
+    digest: 789d4c53c85015691a2d60912745b03579b26c789230e8d402fed3af57e42a24
+    name: all-jupyter-py36-cu100
+    urls:
+    - http://200.200.200.110:8902/ai/all-jupyter-py36-cu100-0.3.2.tgz
+    version: 0.3.2
+  keras-tesnsflow:
+  - apiVersion: v1
+    appVersion: "1.0"
+    created: "2019-09-05T17:40:00.219786582+08:00"
+    description: 该镜像整合了Python、Keras、TensorFlow、Theano，开箱即用。
+    digest: 31861bb4acfc5db30685372619c57b3b087d63768ee9cb1de6b46c9876b6e8e5
+    name: keras-tesnsflow
+    urls:
+    - http://200.200.200.110:8902/ai/keras-tesnsflow-0.3.2.tgz
+    version: 0.3.2
+generated: "2019-09-05T17:40:00.217765932+08:00"
